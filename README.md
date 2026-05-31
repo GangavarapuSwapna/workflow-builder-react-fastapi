@@ -1,17 +1,37 @@
+# Workflow Builder (React Flow + FastAPI)
 
-VectorShift Frontend Technical Assessment
+A visual workflow builder built using React Flow and FastAPI.
 
-Features:
-- BaseNode abstraction
-- Dynamic TextNode handles
-- React Flow integration
-- DAG validation backend
-- FastAPI API integration
+## Features
 
-Run Frontend:
+* Reusable BaseNode abstraction
+* Dynamic TextNode variable parsing
+* Dynamic handle generation
+* Drag-and-drop workflow creation
+* Node and edge counting
+* DAG validation
+* FastAPI backend integration
+
+## Project Structure
+
+frontend/
+
+* React frontend
+* React Flow workflow editor
+
+backend/
+
+* FastAPI backend
+* Pipeline parsing and DAG validation
+
+## Run Frontend
+
 npm install
+
 npm start
 
-Run Backend:
+## Run Backend
+
 pip install fastapi uvicorn python-multipart
+
 uvicorn main:app --reload
